@@ -12,6 +12,8 @@ const testObject = {
 // testObject.[[Prototype]] has properties b and c.
 // testObject.[[Prototype]].[[Prototype]] is Object.prototype 
 
+// Prototypal Chain: { a: 1, b: 2 } ---> { b: 3, c: 4 } ---> Object.prototype ---> null
+
 console.log(testObject.a); // 1
 // Is there an 'a' own property on testObject? Yes, and its value is 1.
 
