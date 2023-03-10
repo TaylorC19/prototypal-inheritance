@@ -1,0 +1,19 @@
+{
+  "name": "prototypal-inheritance",
+  "version": "1.0.0",
+  "description": "Code for a prototypal inheritance lightening talk.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaylorC19/prototypal-inheritance.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TaylorC19/prototypal-inheritance/issues"
+  },
+  "homepage": "https://github.com/TaylorC19/prototypal-inheritance#readme"
+}
