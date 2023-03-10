@@ -8,7 +8,9 @@ class User {
 }
 
 class Orc extends User {
-  super() // gives access to everything in used
+  constructor() {
+    super() // gives access to everything in used
+  }
 
   // add unique info
   //   higher strength than other races
