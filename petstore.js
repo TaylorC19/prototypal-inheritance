@@ -1,19 +1,38 @@
-class Dog {
-  constructor(name, age, breed) {
+class Animal {
+  constructor(name, age) {
     this.name = name;
     this.age = age;
+
+  }
+}
+
+class Dog extends Animal {
+  constructor(name, age, breed) {
+    super(name, age)
     this.breed = breed;
   }
 
   speak() {
-    console.log("Bark bark!")
+    return "Bark bark!";
+  }
+}
+
+class Puppy extends Dog {
+  constructor(name, age, breed) {
+    super(name, age, breed);
+  }
+
+  speak() {
+    return "Yip Yip!";
   }
 }
 
 const dogOne = new Dog("Bisket", 7, "Mixed");
+const puppyOne = new Puppy("Oreo", 1, "Pug")
 console.log(dogOne)
 console.log(dogOne.speak());
-console.log(dogOne.prototype)
+console.log(puppyOne);
+console.log(puppyOne.speak()); // Property Shadowing
 
 /* 
   Dog {name: 'Bisket', age: 7, breed: 'Mixed'}
