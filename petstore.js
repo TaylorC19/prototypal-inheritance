@@ -2,13 +2,12 @@ class Animal {
   constructor(name, age) {
     this.name = name;
     this.age = age;
-
   }
 }
 
 class Dog extends Animal {
   constructor(name, age, breed) {
-    super(name, age)
+    super(name, age);
     this.breed = breed;
   }
 
@@ -28,8 +27,8 @@ class Puppy extends Dog {
 }
 
 const dogOne = new Dog("Bisket", 7, "Mixed");
-const puppyOne = new Puppy("Oreo", 1, "Pug")
-console.log(dogOne)
+const puppyOne = new Puppy("Oreo", 0, "Pug");
+console.log(dogOne);
 console.log(dogOne.speak());
 console.log(puppyOne);
 console.log(puppyOne.speak()); // Property Shadowing
