@@ -3,6 +3,13 @@ class Animal {
     this.name = name;
     this.age = age;
   }
+  
+  yearOfBirth() {
+    let today = new Date();
+    let currentYear = today.getFullYear()
+
+    return currentYear - this.age;
+  }
 }
 
 class Dog extends Animal {
@@ -33,10 +40,12 @@ class Puppy extends Dog {
 const dogOne = new Dog("Bisket", 7, "Mixed");
 const puppyOne = new Puppy("Oreo", 0, "Pug");
 console.log(dogOne);
+console.log(dogOne.yearOfBirth());
 console.log(dogOne.treats());
 console.log(dogOne.speak());
 
 console.log(puppyOne);
+console.log(puppyOne.yearOfBirth());
 console.log(puppyOne.treats());
 console.log(puppyOne.speak()); // Property Shadowing
 
